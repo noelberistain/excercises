@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<script>
+    function limitFunc(fn, num) {
+        var counter = 0;
+        return function () {
+            if (counter < num) {
+                counter++;
+                return fn();
+            }
+            console.log("Un-executable function");
+        }
+
+    }
+
+    var limited = limitFunc(function () { console.log("Execution"); }, 3);
+    limited();
+    limited();
+    limited();
+    limited();
+    limited();
+    limited();
+</script>
+
+<body>
+</body>
+
+</html>

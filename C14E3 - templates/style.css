@@ -1,0 +1,36 @@
+body{
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    width: 100%;
+}
+img{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+    float: left;
+    margin: 10px;
+}
+figure{
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 75%;
+    height: auto;
+    padding: 15px;
+}
+figcaption{
+    overflow: auto;
+    padding: 15px;
+}
+
+.figure2 .img2{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 30%;
+    float: left;
+    margin: 12px;
+}
+.figure2 .figcaption2{
+    overflow: unset;
+    padding: 15px;
+}

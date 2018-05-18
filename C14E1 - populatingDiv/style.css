@@ -1,0 +1,18 @@
+.container{
+    width: 400px;
+    border: 2px solid black;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.rows{
+    display: flex;
+    flex: 1;
+}
+
+.cols{
+    flex: 1;
+    background-color: burlywood;
+    border: 1px solid;
+}

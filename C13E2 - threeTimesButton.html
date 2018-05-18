@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form id="mainForm" action="">
+        <button id="btn" type="button">Button</button>
+        <meter id="mtr" min=0 low=1 medium=2 max=3 value=0></meter>
+    </form>
+    <script>
+        var button = document.querySelector("button");
+        var mtr = document.querySelector("meter");
+        button.addEventListener("click", function handler(event) {
+            mtr.value++;
+            console.log(typeof mtr.value, mtr.value)
+
+            if (mtr.value >= 3)
+                button.removeEventListener("click", handler);
+        });
+    </script>
+</body>
+
+</html>
